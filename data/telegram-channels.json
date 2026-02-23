@@ -1,9 +1,18 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-23T00:00:00Z",
+  "updatedAt": "2026-02-23T11:10:00Z",
   "note": "Product-managed curated list. Not user-configurable.",
   "channels": {
-    "full": [],
+    "full": [
+      {
+        "handle": "VahidOnline",
+        "label": "Vahid Online",
+        "topic": "politics",
+        "region": "iran",
+        "tier": 1,
+        "enabled": true
+      }
+    ],
     "tech": [],
     "finance": []
   }
