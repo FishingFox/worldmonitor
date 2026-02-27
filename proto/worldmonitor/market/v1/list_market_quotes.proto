@@ -21,4 +21,7 @@ message ListMarketQuotesResponse {
 
   // Human-readable reason when Finnhub was skipped (e.g., "FINNHUB_API_KEY not configured").
   string skip_reason = 3;
+
+  // True when the upstream API rate-limited the request.
+  bool rate_limited = 4;
 }

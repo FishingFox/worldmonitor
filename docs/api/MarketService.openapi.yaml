@@ -282,6 +282,9 @@ components:
                 skipReason:
                     type: string
                     description: Human-readable reason when Finnhub was skipped (e.g., "FINNHUB_API_KEY not configured").
+                rateLimited:
+                    type: boolean
+                    description: True when the upstream API rate-limited the request.
             description: ListMarketQuotesResponse contains stock and index quotes.
         MarketQuote:
             type: object
@@ -545,6 +548,9 @@ components:
                     type: array
                     items:
                         $ref: '#/components/schemas/EtfFlow'
+                rateLimited:
+                    type: boolean
+                    description: True when the upstream API rate-limited the request.
             description: ListEtfFlowsResponse contains BTC spot ETF flow data.
         EtfFlowsSummary:
             type: object
